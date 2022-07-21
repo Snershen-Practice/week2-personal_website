@@ -1,0 +1,59 @@
+.banner {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 958px;
+  background: url("../img/banner.png");
+  background-position: center;
+}
+
+h1 {
+  font-size: 5rem;
+  line-height: 1.325;
+}
+
+.social-list {
+  justify-content: space-between;
+  align-items: center;
+}
+
+.about {
+  flex-direction: column;
+  align-items: center;
+}
+
+.about-list {
+  border-bottom: 1px solid #000;
+}
+
+.exp-list {
+  li {
+    display: flex;
+    align-items: center;
+    &::before {
+      content: "";
+      // display: block;
+      @include size(22px);
+      background-color: $primary-color;
+      margin-right: 16px;
+      border-radius: 50%;
+    }
+  }
+}
+
+.brand-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.work-list {
+  flex-wrap: wrap;
+  gap: 24px;
+  img {
+    margin-bottom: 16px;
+  }
+  li {
+    margin-bottom: 24px;
+  }
+}
